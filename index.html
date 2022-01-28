@@ -11,30 +11,68 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="/images/logo.png"></a>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html"><img src="/images/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
           <a class="nav-link" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/portfolio.html">Portfolio</a>
+          <a class="nav-link" href="/pages/product.html">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/reviews.html">Reviews</a>
+          <a class="nav-link" href="/pages/help.html">Help</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/about.html">About Me</a>
+          <a class="nav-link" href="/pages/about.html">About</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Work Starts Here -->
+  <div class="page">
+    <div class="page-banner"></div>
+
+    <div class="call-to-action">
+      <picture>
+        <source media="(max-width: 400px)"
+                srcset="/images/phone-calendar-1.jpg">
+        <img src="/images/calendar-1.jpg">
+      </picture>
+      <div class="slogan">
+        <p>The Productivity App Created by Students for Students.</p>
+      </div>
+      <div class="download button">
+        <a href="/pages/coming-soon.html">Download Now</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="message">
+        <p>Take more control of your schedule.</p>
+      </div>
+      <div class="product">
+        <img src="/images/phone-calendar-2.jpg">
+        <div class="to-product button">
+          <a href="/pages/product.html">Get the App</a>
+        </div>
+      </div>
+      <div class="about">
+        <img src="/images/student-1.jpg">
+        <div class="to-about button">
+          <a href="/pages/about.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Created 24 January 2022</p>
+      <a href="https://github.com/breed34/creative-project-1">Git Repository</a>
+    </div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

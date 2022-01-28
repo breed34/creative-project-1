@@ -1,0 +1,78 @@
+.desktop-install,
+.mobile-install {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.get-desktop {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  color: #EDEDED;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.desktop a {
+  top: 80%;
+  left: 30%;
+  width: 40%;
+  margin-right: 30%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  background-color: #E0E444;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+}
+.get-mobile {
+  position: absolute;
+  text-align: right;
+  top: 45%;
+  left: 55%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  color: #EDEDED;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.mobile a {
+  top: 70%;
+  left: 70%;
+  width: 40%;
+  margin-right: 30%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  background-color: #E0E444;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+}
+.desktop a:hover,
+.mobile a:hover {
+  background-color: #ECEE86;
+}
+.desktop a:active,
+.mobile a:active {
+  background-color: #CCD01E;
+}
+.mobile-install {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 550px) {
+  .get-desktop,
+  .get-mobile {
+    font-size: 5vw;
+  }
+  .desktop a,
+  .mobile a {
+    font-size: 2.5vw;
+    top: 65%;
+  }
+}

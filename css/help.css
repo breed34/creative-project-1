@@ -1,0 +1,71 @@
+.questions-img {
+  display: flex;
+  position: relative;
+}
+.help-message {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #EDEDED;
+  font-size: 25px;
+}
+
+.help-button a {
+  display: flex;
+  justify-content: flex-start;
+  border: 3px solid #626262;
+  border-radius: 15px;
+  margin: 10px;
+}
+.help-button a:hover {
+  background-color: rgba(98, 98, 98, .2);
+}
+.help-button a:active {
+  background-color: rgba(98, 98, 98, .5);
+}
+.help-button img {
+  width: 20%;
+  margin: 10px;
+}
+.help-button p {
+  color: #626262;
+  align-self: center;
+  margin-bottom: 0;
+  margin-left: 30px;
+  width: 80%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 550px) {
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 3%;
+    margin: 3%;
+  }
+  .help-button a {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .help-button img {
+    margin: 20px;
+    width: 60%;
+  }
+  .help-button p {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 3vw;
+  }
+  .help-message {
+    font-size: 5vw;
+  }
+}
